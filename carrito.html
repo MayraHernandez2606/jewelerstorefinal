@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Carrito - JewelerFinal</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/carrito.js" defer></script>
+  <script src="js/pdf.js" defer></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header class="encabezado">
+    <img src="img/logo.png" alt="Logo JewelerFinal" class="logo">
+    <nav class="navegacion">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+    </nav>
+  </header>
+  <main>
+    <a href="catalogo.html" class="boton-verde" style="margin: 20px;">Regresar</a>
+    <h2 style="text-align:center;">Tu Carrito</h2>
+    <ol id="carrito-lista" class="lista-carrito"></ol>
+    <div style="text-align:center; margin: 20px;">
+      <button onclick="vaciarCarrito()" class="boton-verde">Vaciar carrito</button>
+      <h3 id="total"></h3>
+    </div>
+
+<div id="formulario-datos" style="text-align:center; margin: 20px;">
+  <h3>Datos del cliente</h3>
+  <input type="text" id="nombreCliente" placeholder="Nombre" class="input-dato"><br>
+  <input type="text" id="telefonoCliente" placeholder="Teléfono" class="input-dato"><br>
+  <input type="text" id="direccionCliente" placeholder="Dirección" class="input-dato"><br>
+  <button onclick="generatePDF()">Generar PDF</button>
+</div>
+
+</main>
+  <footer>
+    <p>&copy; 2025 JewelerFinal. Todos los derechos reservados.</p>
+  </footer>
+
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://wa.me/50581090209" target="_blank">
+        <button style="padding: 10px 20px; background-color: #a19a58; color: white; font-weight: bold; border: none; border-radius: 5px;">
+          Enviar por WhatsApp
+        </button>
+      </a>
+    </div>
+    </body>
+    
+</html>
